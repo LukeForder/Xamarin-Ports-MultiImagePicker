@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{25873362-4C0D-475E-8784-C0743A8E000A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Com.Luminous.Pick</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>MultiImagePicker.XamarinPort</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="UniversalImageLoader">
+      <HintPath>..\..\..\GitHub\Xamarin-Bindings-Android-Universal-Image-Loader\binaries\UniversalImageLoader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="CustomGallery.cs" />
+    <Compile Include="CustomGalleryActivity.cs" />
+    <Compile Include="GalleryAdapter.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\values\" />
+    <Folder Include="Resources\values-hdpi\" />
+    <Folder Include="Resources\values-mdpi\" />
+    <Folder Include="Resources\values-sw600dp\" />
+    <Folder Include="Resources\values-sw720dp-land\" />
+    <Folder Include="Resources\values-v11\" />
+    <Folder Include="Resources\values-v14\" />
+    <Folder Include="Resources\values-xhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\btn_sel.xml" />
+    <AndroidResource Include="Resources\drawable\on_focus_checkbox.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_hover.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\checkbox_selected.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\checkbox_up.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\top_bar.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_hover.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\checkbox_selected.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\checkbox_up.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\no_media.jpg" />
+    <AndroidResource Include="Resources\drawable-mdpi\top_bar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_hover.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\checkbox_selected.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\checkbox_up.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\top_bar.png" />
+    <AndroidResource Include="Resources\layout\gallery.xml" />
+    <AndroidResource Include="Resources\layout\gallery_item.xml" />
+    <AndroidResource Include="Resources\layout\main.xml" />
+    <AndroidResource Include="Resources\layout\titlebar.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-hdpi\dimens.xml" />
+    <AndroidResource Include="Resources\values-mdpi\colors.xml" />
+    <AndroidResource Include="Resources\values-mdpi\dimen.xml" />
+    <AndroidResource Include="Resources\values-mdpi\strings.xml" />
+    <AndroidResource Include="Resources\values-mdpi\styles.xml" />
+    <AndroidResource Include="Resources\values-sw600dp\dimens.xml" />
+    <AndroidResource Include="Resources\values-sw720dp-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-v11\styles.xml" />
+    <AndroidResource Include="Resources\values-v14\styles.xml" />
+    <AndroidResource Include="Resources\values-xhdpi\dimens.xml" />
+  </ItemGroup>
+</Project>
