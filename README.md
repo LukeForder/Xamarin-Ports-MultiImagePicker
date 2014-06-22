@@ -1,7 +1,7 @@
 Xamarin-Ports-MultiImagePicker
 ==============================
 
-C#/Xamarin port of luminousman/MultipleImagePick [https://github.com/luminousman/MultipleImagePick]
+C#/Xamarin port of [luminousman/MultipleImagePick](https://github.com/luminousman/MultipleImagePick)
 
 Changes from the original
 - Uses the Android Universal Image Loader 1.9.2 (original uses 1.9.0)
