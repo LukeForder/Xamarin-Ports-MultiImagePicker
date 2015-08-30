@@ -68,8 +68,8 @@ namespace Com.Luminous.Pick
 
                 DisplayImageOptions defaultOptions = 
                     new DisplayImageOptions.
-					Builder().
-					CacheOnDisc(true).
+					Builder()
+						.CacheOnDisk(true).
                     ImageScaleType(ImageScaleType.Exactly).
 					BitmapConfig(Bitmap.Config.Rgb565).
 					Build();
@@ -78,7 +78,7 @@ namespace Com.Luminous.Pick
                     new ImageLoaderConfiguration.
 					Builder(BaseContext).
 					DefaultDisplayImageOptions(defaultOptions).
-					DiscCache(new UnlimitedDiscCache(cacheDir)).
+					DiscCache(new UnlimitedDiskCache(cacheDir)).
 					MemoryCache(new WeakMemoryCache());
 
                 ImageLoaderConfiguration config = builder.Build();
